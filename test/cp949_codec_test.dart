@@ -2,11 +2,11 @@ import 'dart:typed_data';
 
 // ignore: import_of_legacy_lib' as another;
 import 'package:cp949_codec/cp949_codec.dart';
-import 'package:flutter_test/flutter_test.dart';
+import 'package:test/test.dart';
 
 void main() {
   List<int> beautiful = [0xBE, 0xC6, 0xB8, 0xA7, 0xB4, 0xD9, 0xBF, 0xEE];
-  String unicodeBeauty = "아름다운";
+  // String unicodeBeauty = "아름다운";
 
   group('common sense', () {
     test('check host endian', () {

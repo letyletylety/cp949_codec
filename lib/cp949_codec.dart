@@ -30,14 +30,6 @@ class CP949Codec extends Encoding {
   @override
   String get name => "euc-kr";
 
-  CP949Encoder get encoder => const CP949Encoder();
-
-  /// Returns the decoder of this, converting from List<int> to String.
-  /// It may be stateful and should not be reused.
-  CP949Decoder get decoder => _allowInvalid
-      ? const CP949Decoder(allowInvalid: true)
-      : const CP949Decoder(allowInvalid: false);
-
   /// cp949 charset needs only 2byte to represent a letter,
   Uint8List encode(String source) => encoder.convert(source);
 
@@ -52,13 +44,23 @@ class CP949Codec extends Encoding {
   }
 
   /// CP949 (EUC-KR) byte 배열을 유니코드 기반으로 잘못 해석하여 깨져 보이는 String 을 받아 변환해 제대로 리턴합니다.
+  /// 다트에서 읽을 수 없는 cp949로 인코딩된 깨진 문자를 유니코드로 복원합니다.
   String decodeString(String brokenString) => decoder.convert(
         Uint8List.fromList(brokenString.codeUnits),
       );
 
   /// CP949 (EUC-KR) byte 배열을 유니코드 기반으로 잘못 해석하여 깨져 보이는 String 을 리턴합니다.
+  /// 이 리턴값은 다트에서는 읽을 수 없습니다.
   String encodeToString(String codeUnits) =>
       String.fromCharCodes(encoder.convert(codeUnits).buffer.asUint8List());
+
+  CP949Encoder get encoder => const CP949Encoder();
+
+  /// Returns the decoder of this, converting from List<int> to String.
+  /// It may be stateful and should not be reused.
+  CP949Decoder get decoder => _allowInvalid
+      ? const CP949Decoder(allowInvalid: true)
+      : const CP949Decoder(allowInvalid: false);
 }
 
 /// This class converts cp949 bytes (lists of unsigned 16-bit integers) to a string.
