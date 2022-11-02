@@ -11,3 +11,7 @@ create example
 ## 0.1.0
 
 - change package description
+
+## 0.1.1
+
+- fix readme

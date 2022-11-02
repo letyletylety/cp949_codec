@@ -1,6 +1,6 @@
 name: cp949_codec
 description: The best package for cp949 decoding/encoding. support null-safety, less memory comsumption. include examples and tests
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/letyletylety/cp949_codec
 
 environment:
