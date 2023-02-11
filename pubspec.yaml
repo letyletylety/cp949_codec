@@ -8,7 +8,7 @@ environment:
 
 screenshots:
   - description: 'Examples of decoding broken cp949 string'
-    path: 'example\screenshots\decodeString.png'
+    path: 'screenshots\decodeString.png'
 
 dependencies:
 dev_dependencies:

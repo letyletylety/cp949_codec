@@ -87,7 +87,6 @@ print(encodedString); // ÄÁÅÙÃ÷
 
 ---
 
-
 ## PR과 이슈는 언제든지 환영합니다
 
 ❤️[PR](https://github.com/letyletylety/cp949_codec/pulls)
