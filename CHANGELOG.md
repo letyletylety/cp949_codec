@@ -23,4 +23,4 @@ create example
 - v1 release
 - big readme fix
 - add screenshot
-  
+- pubspec upgrade
