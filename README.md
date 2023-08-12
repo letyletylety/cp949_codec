@@ -85,6 +85,8 @@ print(encodedString); // ÄÁÅÙÃ÷
 
 기존 [cp949](https://github.com/jjangga0214/dart-cp949) 플러그인의 사용법을 그대로 사용할 수 있습니다.
 
+euc-kr 로 인코딩된 문자열을 해독할 때도 이 플러그인을 사용할 수 있습니다.
+
 ---
 
 ## PR과 이슈는 언제든지 환영합니다

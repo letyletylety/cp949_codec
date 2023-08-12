@@ -24,3 +24,7 @@ create example
 - big readme fix
 - add screenshot
 - pubspec upgrade
+
+## 1.0.1
+
+- add topic in pubspec

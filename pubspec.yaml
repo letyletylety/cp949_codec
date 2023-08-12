@@ -1,7 +1,12 @@
 name: cp949_codec
 description: The best package for cp949 decoding/encoding. support null-safety, less memory comsumption. include examples and tests
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/letyletylety/cp949_codec
+topics:
+  - encoding
+  - korean
+  - cp949
+  - euc-kr
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
