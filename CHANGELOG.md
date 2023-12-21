@@ -28,3 +28,9 @@ create example
 ## 1.0.1
 
 - add topic in pubspec
+
+## 1.0.2
+
+- pubspec score
+    - add pub.dev meta data (repository)
+- add coverage
