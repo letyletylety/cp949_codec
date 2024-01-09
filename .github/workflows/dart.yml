@@ -21,9 +21,12 @@ jobs:
       - name: Setup Dart SDK
         uses: dart-lang/setup-dart@v1.6.0
 
+        
       - name: Install dependencies
         run: dart pub get
 
+      - name: update Dart SDK
+        run: dart pub upgrade
       # Uncomment this step to verify the use of 'dart format' on each commit.
       # - name: Verify formatting
       #   run: dart format --output=none --set-exit-if-changed .
